@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+    <!-- endfonts -->
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>yo assignment</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+<body>
+
+    <!-- BLOG HEADER -->
+
+  <div class="header">
+    <div class="overlay">
+      <h1 class="header-text">Ollie's Sweet Blog</h1>
+    </div>
+  </div>
+
+   <!-- POST BLOG -->
+
+  <div class="write-div">
+    <h1 class="write-header">Write your post here!</h1>
+    <form class="write-blog">
+      <div><input class="blog-title" name="title" placeholder="Put your title here!"></input></div>
+      <textarea class="text-area" name="text" placeholder="Go! Write something!"></textarea>
+      <button class="post-blog" type="submit">POST BLOG!</button>
+    </form>
+  </div>
+
+
+  <!-- WHERE BLOG POSTS GO -->
+
+  <div class="blog-repo">
+
+    <div class="each-post">
+    </div>
+  </div>
+<script type="text/template" id="blogId">
+  <h1 class="blog-post-title"><%= title %></h1>
+  <div class="pdiv"><p class="blog-finished-text"><%= text %></p>
+    <button data-id="<%= id %>" class="delete" type="submit">Delete</button>
+
+  </div>
+  </script>
+
+  <script type="text/template" id="delId"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

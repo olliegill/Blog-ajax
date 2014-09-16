@@ -1,0 +1,161 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+
+$primary-font: 'Pacifico', cursive;
+$secondary-font: 'Cabin Condensed', sans-serif;
+
+// HEADER STYLES
+
+body {
+  background-color: #f8f8e6;
+}
+
+.header-text {
+  text-align: center;
+  text-shadow: 0 4px 3px #000;
+  font-family: $primary-font;
+  color: #e7e7e7;
+  padding: 70px 0 0;
+}
+
+.overlay {
+  height: 200px;
+  background: url('http://theambershow.net/wp-content/uploads//pencils.jpg')
+     repeat-y center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-animation: 100s scroll infinite linear;
+  -moz-animation: 100s scroll infinite linear;
+  -o-animation: 100s scroll infinite linear;
+  -ms-animation: 100s scroll infinite linear;
+  animation: 100s scroll infinite linear;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+
+}
+
+@-webkit-keyframes scroll{
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+
+// POST BLOG STYLES
+
+.write-div {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: solid #c8c8c8 2px;
+}
+
+.write-header {
+  font-family: $primary-font;
+}
+
+.blog-title {
+  margin: 0 0 30px;
+  outline: none;
+  border-radius: 5px;
+  border: solid #a9a9ae 1px;
+
+}
+
+.text-area {
+  width: 70%;
+  height: 100px;
+  outline: none;
+  border-radius: 5px;
+  border: solid #a9a9ae 1px;
+}
+
+.post-blog {
+  width: 150px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: $secondary-font;
+  font-size: 22px;
+  letter-spacing: 1px;
+  display: block;
+  margin: 20px 0 6px 410px;
+  background: linear-gradient(to bottom, #b24926, #faa523);
+  box-shadow: 6px 5px 0 #1d1f21;
+}
+
+.post-blog:active {
+  box-shadow: none;
+  margin: 26px 0 0 426px;
+}
+
+
+ // WHERE BLOGS GO STYLES
+
+.blog-repo {
+  width: 80%;
+  height: 1000px;
+  margin: 30px auto;
+}
+
+.each-post {
+  width: 80%;
+  height: 1000px;
+  margin: 15px auto;
+}
+
+.blog-post-title {
+  font-family: $primary-font;
+}
+
+.pdiv {
+  border-bottom: solid #c8c8c8 2px;
+  font-family: $secondary-font;
+}
+
+.delete {
+  float: right;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #b24926, #faa523);
+  border: none;
+  outline: none;
+}
+
+.delete:active {
+  background: linear-gradient(to bottom, #faa523, #441C0B);
+
+}
