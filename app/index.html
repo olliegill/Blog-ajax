@@ -34,6 +34,8 @@
 
   <div class="header">
     <div class="overlay">
+      <input class="header-name" name="name" placeholder="Change header"</input>
+      <button class="name-button" type="submit">Change</button>
       <h1 class="header-text">Ollie's Sweet Blog</h1>
     </div>
   </div>
@@ -61,6 +63,7 @@
   <h1 class="blog-post-title"><%= title %></h1>
   <div class="pdiv"><p class="blog-finished-text"><%= text %></p>
     <button data-id="<%= id %>" class="delete" type="submit">Delete</button>
+    <button data-id="<%= id %>" class="edit" type="submit">Edit</button>
 
   </div>
   </script>

@@ -70,3 +70,12 @@ $('.each-post').delegate('.delete', 'click', function(){
 
 
 //PUT
+
+// -click edit.
+// -open textarea.
+// -submit new text back into post.
+
+
+//HEADER
+
+// -onclick - empty h1, append with new header from input

@@ -13,12 +13,24 @@ body {
   background-color: #f8f8e6;
 }
 
+.header-name {
+  opacity: 0.6;
+  border-radius: 3px;
+  outline: none;
+}
+
+.name-button {
+  opacity: 0.6;
+  border-radius: 3px;
+  outline: none;
+}
+
 .header-text {
   text-align: center;
   text-shadow: 0 4px 3px #000;
   font-family: $primary-font;
   color: #e7e7e7;
-  padding: 70px 0 0;
+  padding: 40px 0 0;
 }
 
 .overlay {
@@ -153,9 +165,23 @@ body {
   background: linear-gradient(to bottom, #b24926, #faa523);
   border: none;
   outline: none;
+  margin-left: 5px;
 }
 
 .delete:active {
+  background: linear-gradient(to bottom, #faa523, #441C0B);
+
+}
+
+.edit {
+  float: right;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #b24926, #faa523);
+  border: none;
+  outline: none;
+}
+
+.edit:active {
   background: linear-gradient(to bottom, #faa523, #441C0B);
 
 }
